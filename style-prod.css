@@ -210,3 +210,7 @@ main { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gut); }
 .s-prod .s-send { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .s-prod .s-send .s-btn--wide { grid-column: 1 / -1; flex: none; }
 .s-prod .s-send .s-btn--ghost { text-align: center; padding-left: 10px; padding-right: 10px; white-space: nowrap; }
+/* фото первого экрана показываем целиком, без обрезки до 16:9, и на телефоне тоже */
+.s-prod .s-hero__photo { display: block; }
+.s-prod .s-hero__photo img { aspect-ratio: auto; height: auto; object-fit: contain; }
+.s-prod .s-hero__bg img { object-position: 50% 20%; }
